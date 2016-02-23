@@ -1,0 +1,1124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="SISAPConnectionString">
+      <rd:DataSourceID>3c20b337-847c-4d0d-9cbc-8a25f9e6a12b</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>d3e8ca5a-7a17-4cdf-a462-4e8ca7af5621</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="DataSet1_DataTable1">
+      <Fields>
+        <Field Name="COD_PROCESO">
+          <DataField>COD_PROCESO</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RIF">
+          <DataField>RIF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LOOKUP">
+          <DataField>LOOKUP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RAZON_SOCIAL">
+          <DataField>RAZON_SOCIAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NAT_JUR">
+          <DataField>NAT_JUR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DIRECCION">
+          <DataField>DIRECCION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TELEFONO">
+          <DataField>TELEFONO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FAX">
+          <DataField>FAX</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONTACTO">
+          <DataField>CONTACTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="E_MAIL">
+          <DataField>E_MAIL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WEB_PAGE">
+          <DataField>WEB_PAGE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIPO_SERVICIO">
+          <DataField>TIPO_SERVICIO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIPO_SERVICIO2">
+          <DataField>TIPO_SERVICIO2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUENTA_BANCO">
+          <DataField>CUENTA_BANCO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TIPO_CTA_BANCO">
+          <DataField>TIPO_CTA_BANCO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PAIS">
+          <DataField>PAIS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OBSERVACIONES">
+          <DataField>OBSERVACIONES</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPCION">
+          <DataField>DESCRIPCION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Expr3">
+          <DataField>Expr3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Expr5">
+          <DataField>Expr5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONV_CNTRL">
+          <DataField>CONV_CNTRL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONV_CODE">
+          <DataField>CONV_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CIUDAD">
+          <DataField>CIUDAD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ESTADO">
+          <DataField>ESTADO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BANCO">
+          <DataField>BANCO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NOMBRE">
+          <DataField>NOMBRE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="APROBADOR">
+          <DataField>APROBADOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ANAL_C4">
+          <DataField>ANAL_C4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ANAL_C5">
+          <DataField>ANAL_C5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_POSTAL">
+          <DataField>COD_POSTAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SISAPConnectionString</DataSourceName>
+        <CommandText>SELECT     dbo.PROVEEDOR.COD_PROCESO, dbo.PROVEEDOR.RIF, dbo.PROVEEDOR.LOOKUP, dbo.PROVEEDOR.RAZON_SOCIAL, dbo.PROVEEDOR.NAT_JUR, 
+                      dbo.PROVEEDOR.DIRECCION, dbo.PROVEEDOR.TELEFONO, dbo.PROVEEDOR.FAX, dbo.PROVEEDOR.CONTACTO, dbo.PROVEEDOR.E_MAIL, 
+                      dbo.PROVEEDOR.WEB_PAGE, dbo.PROVEEDOR.CUENTA_BANCO, dbo.PROVEEDOR.TIPO_CTA_BANCO, dbo.PROVEEDOR.PAIS, 
+                      dbo.PROVEEDOR.OBSERVACIONES, dbo.BANCO.DESCRIPCION, dbo.CIUDAD.DESCRIPCION AS CIUDAD, dbo.ESTADO.DESCRIPCION AS ESTADO, 
+                      dbo.PROVEEDOR.CONV_CNTRL, dbo.PROVEEDOR.CONV_CODE, E.NAME AS TIPO_SERVICIO, F.NAME AS TIPO_SERVICIO2, U.NOMBRE, 
+                      U2.NOMBRE AS APROBADOR, CASE dbo.PROVEEDOR.ANAL_C4 WHEN '0' THEN 'No' ELSE 'Si' END AS ANAL_C4, 
+                      CASE WHEN dbo.PROVEEDOR.ANAL_C5 = '0' THEN 'No' ELSE 'Si' END AS ANAL_C5
+FROM         dbo.PROVEEDOR INNER JOIN
+                      dbo.BANCO ON dbo.PROVEEDOR.COD_BANCO = dbo.BANCO.COD_BANCO INNER JOIN
+                      dbo.CIUDAD ON dbo.PROVEEDOR.COD_CIUDAD = dbo.CIUDAD.COD_CIUDAD INNER JOIN
+                      dbo.ESTADO ON dbo.CIUDAD.COD_ESTADO = dbo.ESTADO.COD_ESTADO INNER JOIN
+                      SISAP.SUNDB433_VE_P.dbo.SSRFANV AS E ON E.CODE = dbo.PROVEEDOR.TIPO_SERVICIO COLLATE Latin1_General_Bin AND E.SUN_DB = 'PVL' AND 
+                      E.CATEGORY = 'C1' INNER JOIN
+                      SISAP.SUNDB433_VE_P.dbo.SSRFANV AS F ON F.CODE = dbo.PROVEEDOR.TIPO_SERVICIO2 COLLATE Latin1_General_Bin AND F.SUN_DB = 'PVL' AND 
+                      F.CATEGORY = 'C1' INNER JOIN
+                      dbo.USUARIOS AS U ON dbo.PROVEEDOR.COD_SOLICITANTE = U.COD_USUARIO INNER JOIN
+                      dbo.USUARIOS AS U2 ON dbo.PROVEEDOR.COD_APROB1 = U2.COD_USUARIO
+WHERE     (dbo.PROVEEDOR.COD_PROCESO = @cod_Proceso)</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:TableName>DataTable1</rd:TableName>
+        <rd:TableAdapterName>DataTable1TableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>21.59cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <List Name="list1">
+        <DataSetName>DataSet1_DataTable1</DataSetName>
+        <ReportItems>
+          <Textbox Name="COD_POSTAL">
+            <Top>7.75cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>55</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!COD_POSTAL.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox28">
+            <Top>7.75cm</Top>
+            <Width>2.75cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>54</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Código Postal:</Value>
+          </Textbox>
+          <Textbox Name="ANAL_C5">
+            <rd:DefaultName>ANAL_C5</rd:DefaultName>
+            <Top>4.17063cm</Top>
+            <Width>0.75cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>53</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.52646cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!ANAL_C5.Value</Value>
+          </Textbox>
+          <Textbox Name="ANAL_C4">
+            <rd:DefaultName>ANAL_C4</rd:DefaultName>
+            <Top>4.17063cm</Top>
+            <Width>0.75cm</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>52</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.80291cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!ANAL_C4.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox27">
+            <Top>4.17063cm</Top>
+            <Width>6cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>51</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>¿Factura con Orden de Compra?:</Value>
+          </Textbox>
+          <Textbox Name="textbox26">
+            <Top>4.17063cm</Top>
+            <Width>6.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>50</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>¿Factura con Orden de Servicio?:</Value>
+          </Textbox>
+          <Line Name="line3">
+            <Top>14cm</Top>
+            <Width>14.7619cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>49</ZIndex>
+            <Left>0.25cm</Left>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line2">
+            <Top>5.63227cm</Top>
+            <Width>14.7619cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>48</ZIndex>
+            <Left>0.25cm</Left>
+            <Height>0cm</Height>
+          </Line>
+          <Line Name="line1">
+            <Top>1.75cm</Top>
+            <Width>14.7619cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>47</ZIndex>
+            <Left>0.25cm</Left>
+            <Height>0cm</Height>
+          </Line>
+          <Textbox Name="COD_PROCESO">
+            <rd:DefaultName>COD_PROCESO</rd:DefaultName>
+            <Width>2.53968cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>46</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!COD_PROCESO.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox25">
+            <Width>4cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>45</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Nro. de Solicitud:</Value>
+          </Textbox>
+          <Textbox Name="NOMBRE">
+            <rd:DefaultName>NOMBRE</rd:DefaultName>
+            <Top>17.75cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>44</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!NOMBRE.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox24">
+            <Top>17.75cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>43</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Solicitante:</Value>
+          </Textbox>
+          <Textbox Name="APROBADOR">
+            <rd:DefaultName>APROBADOR</rd:DefaultName>
+            <Top>17.75cm</Top>
+            <Width>4.5cm</Width>
+            <Style>
+              <BorderColor>
+                <Top>Black</Top>
+              </BorderColor>
+              <BorderStyle>
+                <Top>Solid</Top>
+              </BorderStyle>
+              <BorderWidth>
+                <Top>1pt</Top>
+              </BorderWidth>
+              <FontFamily>Verdana</FontFamily>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>42</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!APROBADOR.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox23">
+            <rd:DefaultName>textbox23</rd:DefaultName>
+            <Top>17.75cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <BorderColor>
+                <Top>Black</Top>
+              </BorderColor>
+              <BorderStyle>
+                <Top>Solid</Top>
+              </BorderStyle>
+              <BorderWidth>
+                <Top>1pt</Top>
+              </BorderWidth>
+              <FontFamily>Verdana</FontFamily>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>41</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Aprobador</Value>
+          </Textbox>
+          <Textbox Name="DESCRIPCION">
+            <rd:DefaultName>DESCRIPCION</rd:DefaultName>
+            <Top>14.25cm</Top>
+            <Width>5.5cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>40</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!DESCRIPCION.Value</Value>
+          </Textbox>
+          <Textbox Name="TIPO_SERVICIO2">
+            <rd:DefaultName>TIPO_SERVICIO2</rd:DefaultName>
+            <Top>12.25cm</Top>
+            <Width>10.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>39</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!TIPO_SERVICIO2.Value</Value>
+          </Textbox>
+          <Textbox Name="TIPO_SERVICIO">
+            <rd:DefaultName>TIPO_SERVICIO</rd:DefaultName>
+            <Top>11.5cm</Top>
+            <Width>10.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>38</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!TIPO_SERVICIO.Value</Value>
+          </Textbox>
+          <Textbox Name="TIPO_CTA_BANCO">
+            <rd:DefaultName>TIPO_CTA_BANCO</rd:DefaultName>
+            <Top>15cm</Top>
+            <Width>2.53968cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>37</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!TIPO_CTA_BANCO.Value</Value>
+          </Textbox>
+          <Textbox Name="CUENTA_BANCO">
+            <rd:DefaultName>CUENTA_BANCO</rd:DefaultName>
+            <Top>15.75cm</Top>
+            <Width>5.5cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>36</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!CUENTA_BANCO.Value</Value>
+          </Textbox>
+          <Textbox Name="WEB_PAGE">
+            <rd:DefaultName>WEB_PAGE</rd:DefaultName>
+            <Top>10.75cm</Top>
+            <Width>9cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>35</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!WEB_PAGE.Value</Value>
+          </Textbox>
+          <Textbox Name="E_MAIL">
+            <rd:DefaultName>E_MAIL</rd:DefaultName>
+            <Top>10cm</Top>
+            <Width>9.5cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>34</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!E_MAIL.Value</Value>
+          </Textbox>
+          <Textbox Name="CONTACTO">
+            <rd:DefaultName>CONTACTO</rd:DefaultName>
+            <Top>9.25cm</Top>
+            <Width>9.5cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>33</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!CONTACTO.Value</Value>
+          </Textbox>
+          <Textbox Name="FAX">
+            <rd:DefaultName>FAX</rd:DefaultName>
+            <Top>8.5cm</Top>
+            <Width>5cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>32</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!FAX.Value</Value>
+          </Textbox>
+          <Textbox Name="TELEFONO">
+            <rd:DefaultName>TELEFONO</rd:DefaultName>
+            <Top>8.5cm</Top>
+            <Width>5.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>31</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!TELEFONO.Value</Value>
+          </Textbox>
+          <Textbox Name="PAIS">
+            <rd:DefaultName>PAIS</rd:DefaultName>
+            <Top>7.75cm</Top>
+            <Width>5.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>30</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!PAIS.Value</Value>
+          </Textbox>
+          <Textbox Name="ESTADO">
+            <rd:DefaultName>ESTADO</rd:DefaultName>
+            <Top>7cm</Top>
+            <Width>5.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>29</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!ESTADO.Value</Value>
+          </Textbox>
+          <Textbox Name="CIUDAD">
+            <rd:DefaultName>CIUDAD</rd:DefaultName>
+            <Top>7cm</Top>
+            <Width>5cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>28</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!CIUDAD.Value</Value>
+          </Textbox>
+          <Textbox Name="DIRECCION">
+            <rd:DefaultName>DIRECCION</rd:DefaultName>
+            <Top>5.75cm</Top>
+            <Width>10.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>27</ZIndex>
+            <Left>4.5cm</Left>
+            <Height>1cm</Height>
+            <Value>=Fields!DIRECCION.Value</Value>
+          </Textbox>
+          <Textbox Name="CONV_CODE">
+            <rd:DefaultName>CONV_CODE</rd:DefaultName>
+            <Top>3.39418cm</Top>
+            <Width>2.53968cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>26</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!CONV_CODE.Value</Value>
+          </Textbox>
+          <Textbox Name="CONV_CNTRL">
+            <rd:DefaultName>CONV_CNTRL</rd:DefaultName>
+            <Top>3.39418cm</Top>
+            <Width>0.75cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>25</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!CONV_CNTRL.Value</Value>
+          </Textbox>
+          <Textbox Name="RAZON_SOCIAL">
+            <rd:DefaultName>RAZON_SOCIAL</rd:DefaultName>
+            <Top>2.64418cm</Top>
+            <Width>11.75cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>24</ZIndex>
+            <Left>3cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!RAZON_SOCIAL.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox22">
+            <Top>15cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>23</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Tipo de Cuenta:</Value>
+          </Textbox>
+          <Textbox Name="textbox21">
+            <Top>15.75cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>22</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Cuenta Bancaria:</Value>
+          </Textbox>
+          <Textbox Name="textbox20">
+            <Top>14.25cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>21</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Banco:</Value>
+          </Textbox>
+          <Textbox Name="textbox19">
+            <Top>13.25cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>20</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Datos del Banco</Value>
+          </Textbox>
+          <Textbox Name="textbox18">
+            <Top>12.25cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>19</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Actividad Secundaria:</Value>
+          </Textbox>
+          <Textbox Name="textbox17">
+            <Top>11.5cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>18</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Actividad Principal:</Value>
+          </Textbox>
+          <Textbox Name="textbox16">
+            <Top>10.75cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>17</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Página Web:</Value>
+          </Textbox>
+          <Textbox Name="textbox15">
+            <Top>10cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>E-mail:</Value>
+          </Textbox>
+          <Textbox Name="textbox14">
+            <Top>9.25cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Contacto:</Value>
+          </Textbox>
+          <Textbox Name="textbox13">
+            <Top>8.5cm</Top>
+            <Width>1cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Fax:</Value>
+          </Textbox>
+          <Textbox Name="textbox12">
+            <Top>8.5cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Teléfono:</Value>
+          </Textbox>
+          <Textbox Name="textbox11">
+            <Top>7.75cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>País:</Value>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <Top>7cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Ciudad:</Value>
+          </Textbox>
+          <Textbox Name="textbox9">
+            <Top>4.88228cm</Top>
+            <Width>4cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Datos de Contacto</Value>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <Top>1cm</Top>
+            <Width>4cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Datos Básicos</Value>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <Top>5.75cm</Top>
+            <Width>4.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Dirección Fiscal:</Value>
+          </Textbox>
+          <Textbox Name="textbox6">
+            <Top>7cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Estado:</Value>
+          </Textbox>
+          <Textbox Name="textbox5">
+            <Top>3.39418cm</Top>
+            <Width>4cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.75cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Tipo de Moneda:</Value>
+          </Textbox>
+          <Textbox Name="textbox4">
+            <Top>3.39418cm</Top>
+            <Width>4cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>¿Moneda Extranjera?:</Value>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <Top>2.64418cm</Top>
+            <Width>2.75cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Razón Social:</Value>
+          </Textbox>
+          <Textbox Name="LOOKUP">
+            <rd:DefaultName>LOOKUP</rd:DefaultName>
+            <Top>1.89418cm</Top>
+            <Width>2.53968cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.5cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!LOOKUP.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox2">
+            <Top>1.89418cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Lookup:</Value>
+          </Textbox>
+          <Textbox Name="textbox1">
+            <rd:DefaultName>textbox1</rd:DefaultName>
+            <Top>1.89418cm</Top>
+            <Width>2.75cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>Rif:</Value>
+          </Textbox>
+          <Textbox Name="RIF">
+            <rd:DefaultName>RIF</rd:DefaultName>
+            <Top>1.89418cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!RIF.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <Width>16.53968cm</Width>
+        <Height>18.75cm</Height>
+      </List>
+    </ReportItems>
+    <Height>19cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

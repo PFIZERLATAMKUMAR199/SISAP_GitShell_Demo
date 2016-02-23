@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WebApplication2.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SISAP_WebApplication_Autenticar_Autenticar" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sicafws-dev.pfizer.com/Autenticar.asmx</Value>
+    </Setting>
+    <Setting Name="SISAP_CSharp_Autenticar_Autenticar" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sicafws.pfizer.com/Autenticar.asmx</Value>
+    </Setting>
+    <Setting Name="WebApplication2_Autenticar_Autenticar" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sicafws.pfizer.com/Autenticar.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

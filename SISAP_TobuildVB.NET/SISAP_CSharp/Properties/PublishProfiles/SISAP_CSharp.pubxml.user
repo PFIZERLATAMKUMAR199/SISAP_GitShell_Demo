@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\VNZ_RAVI\SISAP AD implementation\Build_Version</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.dll">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="bin/proveedor.dll">
+      <publishTime>02/16/2016 15:19:06</publishTime>
+    </File>
+    <File Include="bin/SISAP_CSharp.dll">
+      <publishTime>02/16/2016 15:19:09</publishTime>
+    </File>
+    <File Include="bin/SISAP_VB.dll">
+      <publishTime>02/16/2016 15:06:30</publishTime>
+    </File>
+    <File Include="bin/SISAP_VB.XmlSerializers.dll">
+      <publishTime>01/18/2016 21:38:56</publishTime>
+    </File>
+    <File Include="bin/System.DirectoryServices.AccountManagement.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="bin/System.DirectoryServices.dll">
+      <publishTime>03/18/2010 19:31:26</publishTime>
+    </File>
+    <File Include="Consultar_proveedor.aspx">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="DataSet1.xsc">
+      <publishTime>02/16/2016 14:46:22</publishTime>
+    </File>
+    <File Include="DataSet1.xss">
+      <publishTime>02/16/2016 14:46:22</publishTime>
+    </File>
+    <File Include="images/Actualizar.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Agregar.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/banner.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Calendar_scheduleHS.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/camion.jpg">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Cancelar.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Copia de banner.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Delete.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/document.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Find.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/icono.jpg">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/icono.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Insert.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Login.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Logo.jpg">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Logo.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Logo_Intranet.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Modificar.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/pixel_bk_general.gif">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Search.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Select.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/TopeMenu.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="images/Valid.png">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="Inicio.aspx">
+      <publishTime>12/11/2015 16:24:31</publishTime>
+    </File>
+    <File Include="Perfiles.aspx">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="Recaudos.aspx">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="Rechazados.aspx">
+      <publishTime>01/09/2016 20:57:00</publishTime>
+    </File>
+    <File Include="Reporte/ReporteSolicitud.aspx">
+      <publishTime>02/16/2016 15:14:32</publishTime>
+    </File>
+    <File Include="SISAPDataSet.xsc">
+      <publishTime>01/20/2016 15:32:09</publishTime>
+    </File>
+    <File Include="SISAPDataSet.xss">
+      <publishTime>01/20/2016 15:32:09</publishTime>
+    </File>
+    <File Include="Web References/Autenticar/Reference.map">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+    <File Include="web.config_Prod">
+      <publishTime>10/27/2015 15:55:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,57 @@
+<%@ Master Language="VB" Inherits="SISAP_VB.prove" Codebehind="prove.master.vb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Sistema Automatizado de Proveedores</title>
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.3)"/>
+    <script language="javascript">
+    function LennarLookUp()
+    {        
+        document.getElementById("ctl00_ContentPlaceHolder1_txtLookup").value = document.getElementById("ctl00_ContentPlaceHolder1_ddlRif").value + document.getElementById("ctl00_ContentPlaceHolder1_txtRif").value;    
+    }
+    
+    function AbrirBuscarRif(pagina)
+    {
+        window.open(pagina,'Seniat','height=396,width=350,menubar=0,scrollbars=0,resizable=0,status=1,toolbar=0');
+        LennarLookUp();
+    }
+    
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align: center">
+        <table border="0" cellpadding="0" cellspacing="0" width="897px">
+            <tr>
+                <td colspan="2" >
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/banner.png" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 27px" align="center">
+                    <asp:Menu ID="Menu_Principal" runat="server" BackColor="White" DynamicHorizontalOffset="2"
+                        Font-Names="Verdana" Font-Size="X-Small" ForeColor="Navy"
+                        StaticSubMenuIndent="10px" ItemWrap="True" Font-Bold="True" Width="99.5%" Orientation="Horizontal">
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" BackColor="#E0E0E0" />
+                        <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#E3EAEB" />
+                        <StaticSelectedStyle BackColor="#000040" ForeColor="White" />
+                        <DynamicSelectedStyle BackColor="#1C5E55" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="#507CD1" ForeColor="White" Font-Italic="False" Font-Overline="False" Font-Underline="True" />
+                    </asp:Menu>                
+                </td>   
+            </tr>
+            <tr>              
+               
+                <td style="vertical-align: top; text-align: left;">
+                        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
